@@ -2,4 +2,125 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  width: 375px;
+  background-image: var(--background-cover);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  height: 668px;
+  display: grid;
+  margin: 10px;
+}
+
+.decorated-zone:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-left: none; 
+  border-right: 1px solid #FF0070;
+  border-bottom: none; 
+  border-top: 1px solid #FF0070;
+}
+
+.decorated-zone:after {
+  content: "";
+  position: absolute;
+  bottom: 20px; 
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-top: none;
+  border-right: none; 
+  border-left: 1px solid #FF0070; 
+  border-bottom: 1px solid #FF0070;
+}
+
+.decor {
+  position: absolute;
+  top: 0px;
+  right: 9px;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FF0070;
+}
+
+.decor::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FF0070;
+  margin: 0 0 2px 9px;
+  box-shadow: 0 0 4px 2px #FF0070;
+}
+
+.header__theme-menu {
+  color: #FF0070;
+  justify-self: end;
+  align-self: center;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.header__theme-menu-item {
+  padding-top: 16px;
+}
+
+.header__theme-menu-item:first-child {
+  padding-top: 30px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button:disabled {
+  border: 1px solid #FF0070;
+  padding: 1.5px 13px 3px 13px;
+}
+
+.title {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-style: Bold;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 96.3px;
+  letter-spacing: 0%;
+  color: #DB00FF;
+}
+
+.header__title{
+  text-shadow: 4px 4px 0 #FF0070;
+  align-self: center;
+  padding-bottom: 15px;
+}
+
+.header__text {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 23.4px;
+  max-height: 117px;
+}
+
+.title-decor {
+  color: #000028;
+  background-color: #FF0070;
 }
