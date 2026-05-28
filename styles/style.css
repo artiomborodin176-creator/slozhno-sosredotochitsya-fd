@@ -249,11 +249,16 @@
     --dep: 20px;
   }
 
+  .decor {
+    right: 29px;
+  }
+
   .header {
     padding-left: 0;
   }
 
   .main {
+    margin-top: 40px;
     padding-bottom: 60px;
   }
 
@@ -343,6 +348,10 @@
 }
 
 @media (width >= 1024px) {
+  .main {
+    margin-top: 40px;
+  }
+
   .header__theme-menu {
     justify-self: center;
     align-self: start;
