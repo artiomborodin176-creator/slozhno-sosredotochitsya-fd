@@ -47,7 +47,7 @@
 .decor {
   position: absolute;
   top: var(--dep, 10px);
-  right: 29px;
+  right: 19px;
   font-family: var(--font-family, monospace);
   font-weight: var(--font-weight-text, 400);
   font-style: normal;
@@ -105,7 +105,7 @@
 
 .header__theme-menu-button:disabled {
   border: 1px solid var(--outline, #ff0070);
-  padding: 1.5px 13px 3px 13px;
+  padding: 1.5px 13px 0 13px;
 }
 
 .header__theme-menu-button_active {
@@ -124,7 +124,7 @@
   align-self: center;
 }
 
-.header__title{
+.header__title {
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
@@ -146,7 +146,7 @@
 
 .main {
   padding: var(--dep,10px);
-  margin-top: 40px;
+  margin-top: 29px;
 }
 
 .section__title {
@@ -156,7 +156,6 @@
   line-height: var(--line-height-text, 23.9px);
   font-weight: var(--font-weight-title, 700);
   padding-bottom: 20px;
-  color: var(--title-text-color, #000028);
 }
 
 .section__subtitle {
@@ -247,7 +246,7 @@
 @media (width >= 768px) {
   :root {
     --size-title-text: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --dep: 20px
+    --dep: 20px;
   }
 
   .header {
