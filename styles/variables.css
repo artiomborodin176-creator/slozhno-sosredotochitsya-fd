@@ -17,4 +17,14 @@
   --dep: 10px;
   --outline-hover: #ff007066;
   --outline: #ff0070;
+  --header-title: #DB00FF;
+  --decorated-zone-color: #ff0070;
+  --section-title-color: #ff0070;
+}
+
+@media (width >= 768px) {
+  :root {
+    --size-title-text: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --dep: 20px;
+  }
 }

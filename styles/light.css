@@ -6,6 +6,9 @@
   --outline-hover: #32312D66;
   --outline: #353430;
   --title-text-color: #353430;
+  --header-title: #FFC2E6;
+  --decorated-zone-color: #353430;
+  --section-title-color: #353430;
   .decor {
       display: none;
   }
@@ -20,6 +23,9 @@
   --outline-hover: #32312D66;
   --outline: #353430;
   --title-text-color: #353430;
+  --header-title: #FFC2E6;
+  --section-title-color: #353430;
+  --decorated-zone-color: #353430;
   }
   .decor {
     display: none;

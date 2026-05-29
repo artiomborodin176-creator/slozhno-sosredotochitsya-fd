@@ -26,9 +26,9 @@
   width: 25px;
   height: 25px;
   border-left: none; 
-  border-right: 1px solid var(--accent-color, #ff0070);
+  border-right: 1px solid var(--decorated-zone-color, #ff0070);
   border-bottom: none; 
-  border-top: 1px solid var(--accent-color, #ff0070);
+  border-top: 1px solid var(--decorated-zone-color, #ff0070);
 }
 
 .decorated-zone:after {
@@ -40,8 +40,8 @@
   height: 25px;
   border-top: none;
   border-right: none; 
-  border-left: 1px solid var(--accent-color, #ff0070); 
-  border-bottom: 1px solid var(--accent-color, #ff0070);
+  border-left: 1px solid var(--decorated-zone-color, #ff0070); 
+  border-bottom: 1px solid var(--decorated-zone-color, #ff0070);
 }
 
 .decor {
@@ -120,7 +120,7 @@
   font-size: var(--size-title-text, 18px);
   line-height: 96.3px;
   letter-spacing: 0%;
-  color: #DB00FF;
+  color: var(--header-title);
   align-self: center;
 }
 
@@ -131,7 +131,6 @@
 .header__text {
   font-family: var(--font-family, monospace);
   font-weight: var(--font-weight-title, 700 );
-  font-style: Bold;
   font-size: var(--size-main-text, 18px);
   line-height: var(--line-height-text, 23.4px);
   max-height: 117px;
@@ -140,7 +139,7 @@
 }
 
 .title-decor {
-  color: #000028;
+  color: var(--title-text-color, #ff0070) ;
   background-color: var(--accent-color, #ff0070);
 }
 
@@ -152,7 +151,7 @@
 .section__title {
   font-family: var(--font-family, monospace);
   font-size: var(--size-main-text, 18px);
-  color: var(--accent-color, #ff0070);
+  color: var(--section-title-color, #ff0070);
   line-height: var(--line-height-text, 23.9px);
   font-weight: var(--font-weight-title, 700);
   padding-bottom: 20px;
@@ -176,12 +175,8 @@
   padding-bottom: 20px;
 }
 
-.section__title-low {
-  font-family: var(--font-family, monospace);
-  font-size: var(--size-main-text, 18px);
-  line-height: var(--line-height-text, 23.9px);
+.low {
   font-weight: var(--font-weight-text, 400);
-  margin-bottom: 10px;
 }
 
 .link {
@@ -223,6 +218,7 @@
 .section__image-ithem {
   width: 100%;
   object-position: center;
+  object-fit: cover;
 }
 
 .section__image-ithem:last-child {
@@ -244,11 +240,6 @@
 }
 
 @media (width >= 768px) {
-  :root {
-    --size-title-text: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --dep: 20px;
-  }
-
   .decor {
     right: 29px;
   }
@@ -279,7 +270,7 @@
     padding: 0;
   }
 
-  .dopamine {
+  .article {
     grid-column: 2;
   }
 
@@ -294,23 +285,7 @@
     margin-bottom: 30px;
   }
 
-  .music {
-    grid-column: 2;
-  }
-
-  .eet-well {
-    grid-column: 2;
-  }
-
-  .walk {
-    grid-column: 2;
-  }
-
-  .read {
-    grid-column: 2;
-  }
-
-  .Concentration {
+  .concentration {
     width: min-content;
   }
 
@@ -321,7 +296,7 @@
   }
 
   .section__image-ithem {
-    block-size: 100%;
+    block-size: 100%; /* это свойство не дубль, оно растягивает изображение в нужный размер*/
     object-fit: cover;
     object-position: center;
   }
@@ -378,7 +353,7 @@
 
   .section-what {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     column-gap: 20px;
   }
 
