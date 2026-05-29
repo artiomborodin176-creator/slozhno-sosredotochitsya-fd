@@ -285,7 +285,7 @@
     margin-bottom: 30px;
   }
 
-  .concentration {
+  .concentration-title {
     width: min-content;
   }
 
@@ -347,25 +347,26 @@
     min-width: 491px;
     margin-top: 15px;
   }
-  .Concentration {
+  .concentration-title {
     width: initial;
+    max-width: 314px;
+    grid-column: 1/4;
   }
 
   .section-what {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content 1fr;
     column-gap: 20px;
   }
 
-  .food {
-    grid-row: 2;
+  .section-how {
+    column-gap: 10px;
   }
 
-  .devices {
-    grid-row: 2;
+  .section-why {
+    column-gap: 10px;
   }
 
-  .concentration {
-    grid-row: 2;
-  }
+  
 }
