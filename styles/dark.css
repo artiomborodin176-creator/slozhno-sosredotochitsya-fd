@@ -11,6 +11,9 @@
   --color-main-text: #F1B2CE;
   --outline-hover: #ff007066;
   --outline: #ff0070;
+  --header-title: #DB00FF;
+  --decorated-zone-color: #ff0070;
+  --section-title-color: #ff0070;
   .decor {
       display: initial;
   }

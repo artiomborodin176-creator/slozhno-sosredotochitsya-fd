@@ -116,7 +116,6 @@
 .title {
   font-family: var(--font-family, monospace);
   font-weight: var(--font-weight-title, 400);
-  font-style: Bold;
   font-size: var(--size-title-text, 18px);
   line-height: 96.3px;
   letter-spacing: 0%;
